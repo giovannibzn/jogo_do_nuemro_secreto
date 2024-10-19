@@ -10,7 +10,7 @@ function exibirNomeNaTela(tag, texto){
 };
 
 function exibirMensagemInicial (){
-    exibirNomeNaTela("h1", "Jogo do núemro secreto")
+    exibirNomeNaTela("h1", "Jogo do número secreto")
     exibirNomeNaTela("p", `Escolha um número entre 1 e ${numeroLimite}`)
 }
 
@@ -18,7 +18,7 @@ exibirMensagemInicial();
 
 function verificarChute() {
     let chute = document.querySelector("input").value;
-    let palavraTentativa = tentativas > 1 ? "tentaivas" : "tentativa";
+    let palavraTentativa = tentativas > 1 ? "tentativas" : "tentativa";
     let mensagemTentaivas = `Você descobriu o número secreto ${nuemroSecreto} com ${tentativas} ${palavraTentativa}!`
     if (chute == nuemroSecreto){
         exibirNomeNaTela("h1", "Acertou!");
